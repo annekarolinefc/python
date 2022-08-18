@@ -1,19 +1,21 @@
-<h1>Aprendendo <b>Python</b></h1>
-</br>
-<h2>Links do Google Colab</h2>
+<h1>Sprint 02 - Python</h1>
+<h2>Links</h2>
 <h3>Cursos realizados:</h3>
-<a href="">Curso Python para Data Science</a></br>
-<a href="">Curso Python: começando com a linguagem</a></br>
-</br>
+<a href="/cursos/python-para-data-science">Curso Python para Data Science</a></br>
+<a href="/cursos/python-comecando-com-a-linguagem">Curso Python: começando com a linguagem</a></br>
 <h3>Listas de exercicios</h3>
 <a href="/listas-de-exercicios/lista-01/Lista_01-Parte_01.ipynb">Lista 01 - Parte 01</a></br>
 <a href="/listas-de-exercicios/lista-01/Lista_01-Parte_02.ipynb">Lista 01 - Parte 02</a></br>
 <a href="/listas-de-exercicios/lista-02/Lista_02.ipynb">Lista 02</a></br>
 </br>
 
-# Exercícios – Parte 1
+<h3>Sumário</h3>
+<a href=#parte1>Parte 01<a>
+<a href=#parte2>Parte 02<a>
 
-</br> 
+
+# Exercícios – Parte 1
+<div id="parte1"></div>
 
 ## Exercício 1
 Escreva um código Python que lê do teclado o nome e a idade de um usuário e imprime o ano em que o
@@ -89,8 +91,7 @@ print("{:0>2}/{:0>2}/{}".format(dia, mes, ano))
 ```
 
 # Exercícios 1 – Parte 2
-
-</br> 
+<div id="parte2"></div>
 
 ### Exercício 1
 ```sh
