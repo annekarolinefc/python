@@ -2,12 +2,13 @@
 </br>
 <h2>Links do Google Colab</h2>
 <h3>Cursos realizados:</h3>
-<a href="https://colab.research.google.com/drive/1fVTpY102py-6DGVqOT-IBIohjJlBp5IS?usp=sharing">Curso Python para Data Science</a></br>
-<a href="https://colab.research.google.com/drive/1sEDwYfNPALtanGdNIOiJ3LudxQf7LIHK?usp=sharing">Curso Python: começando com a linguagem</a></br>
+<a href="">Curso Python para Data Science</a></br>
+<a href="">Curso Python: começando com a linguagem</a></br>
 </br>
 <h3>Listas de exercicios</h3>
-<a href="https://colab.research.google.com/drive/1mulhE1JDlaDyOPNYVz4SC4PJeBrTM0_n?usp=sharing">Lista 01</a></br>
-<a href="https://colab.research.google.com/drive/1JuTiwjZ9Oz2jF59r5h9Z33iE0xi-1uHK?usp=sharing">Lista 02</a></br>
+<a href="/listas-de-exercicios/lista-01/Lista_01-Parte_01.ipynb">Lista 01 - Parte 01</a></br>
+<a href="/listas-de-exercicios/lista-01/Lista_01-Parte_02.ipynb">Lista 01 - Parte 02</a></br>
+<a href="/listas-de-exercicios/lista-02/Lista_02.ipynb">Lista 02</a></br>
 </br>
 
 # Exercícios – Parte 1
@@ -26,8 +27,7 @@ current_time = datetime.datetime.now()
 ano_atual = current_time.year
 
 nome = input('Insira seu nome: ')
-idade = input('Insira usa idade: ')
-idade = int(idade)
+idade = int(input('Insira usa idade: '))
 ano = 100-idade+2022;
 print(f'{nome} irá completar 100 anos em {ano}.')
 ```
@@ -37,8 +37,7 @@ print(f'{nome} irá completar 100 anos em {ano}.')
 Escreva um código Python que lê do teclado um número digitado pelo usuário e imprime se ele par ou ímpar
 
 ```sh
-numero = input('Digite um numero: ')
-numero = float(numero)
+numero = float(input('Digite um numero: '))
 if (numero%2==0):
   print(f'{numero} é par.')
 else :
@@ -64,8 +63,8 @@ Escreva um código Python que imprime todos os números primos de 0 até 100.
 ```sh
 for numero in range(2, 101):
     for count in range(2, numero):
-        if (numero%count) == 0:
-            break 
+        if (numero%count) == 0: #o numero possui um divisor sem ser 1 e ele mesmo.
+            break # encerra o laço
     else:
         print(f'{numero} é primo')
 ```
@@ -76,8 +75,56 @@ for numero in range(2, 101):
 
 ```sh
 dia = input('Insira o dia: ')
-mes = input('Insira o mês: ')
-ano = input('Insira o ano: ')
 
-print(dia, mes, ano, sep=('/'))
+mes = int(input('Insira o mês: '))
+if mes >= 13:
+    mes = input('Valor incorreto. Insira novamente o mês: ')
+    
+ano = input('Insira o ano com quatro digitos: ')
+qtd_caracteres_ano = len(ano)
+if qtd_caracteres_ano<4:
+    ano = input('Insira novamente o ano com quatro digitos: ')
+    
+print("{:0>2}/{:0>2}/{}".format(dia, mes, ano))
+```
+
+# Exercícios 1 – Parte 2
+
+</br> 
+
+### Exercício 1
+```sh
+```
+
+### Exercício 2
+```sh
+
+```
+
+### Exercício 3
+```sh
+```
+
+### Exercício 4
+```sh
+```
+
+### Exercício 5
+```sh
+```
+
+### Exercício 6
+```sh
+```
+
+### Exercício 7
+```sh
+```
+
+### Exercício 8
+```sh
+```
+
+### Exercício 9
+```sh
 ```
